@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설챗 채팅방</title>
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+<body>
+    <div class="modal" onclick="$(this).removeClass(`modal_show`)">
+        <div class="modal_text">존재하지 않는 이메일이에요.</div>
+    </div>
+
+    <div class="divver">
+        <div class="window">
+
+            <div class="topbar">
+                <img src="/img/arrow-left-solid.svg" class="arrow" alt="" onclick="move()">
+                <div class="topbar_text">프로필 사진</div>
+            </div>
+
+            <div class="menu">
+                <div class="section">
+                    <div class="section_title">사진</div>
+                    <div class="imgs" id="nomal">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="/js/profile.js"></script>
+</body>
+</html>

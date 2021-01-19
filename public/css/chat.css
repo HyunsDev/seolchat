@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes fadeUp {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #222427;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.divver {
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.window {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0;
+  background-color: #292B2F;
+  height: 100vh;
+  width: 100vw;
+}
+
+.topbar {
+  background-color: #36393F;
+  height: 50px;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 15px;
+  top: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .top_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.topbar .top_left img {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-top: 4px;
+}
+
+.topbar .top_mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .top_mid .top_mid_big {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.topbar .top_mid .top_mid_small {
+  color: #9B9EA2;
+  font-size: 9px;
+}
+
+.topbar .top_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 12px;
+}
+
+.topbar .top_right img {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  margin-right: -12px;
+}
+
+.noticebar {
+  background-color: #26272b;
+  height: 30px;
+  top: 50px;
+  text-align: center;
+  font-size: 13px;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 15px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chatbar {
+  background-color: #56585e;
+  height: 50px;
+  width: 100vw;
+  bottom: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chatbar input {
+  background-color: #45474D;
+  color: #ffffff;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.chatbar input:focus {
+  outline: none;
+}
+
+.chatbar .go {
+  width: 50px;
+  background-color: #292B2F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+.chatbar .go:hover {
+  background-color: #323438;
+}
+
+.chatbar .loud {
+  width: 50px;
+  background-color: #393b3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+.chatbar .loud:hover {
+  background-color: #323438;
+}
+
+.channel {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
+  padding: 0 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #292B2F;
+  overflow: auto;
+}
+
+.channel::-webkit-scrollbar {
+  width: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.channel::-webkit-scrollbar-thumb {
+  z-index: 3;
+  background-color: #1e1f22;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.channel .msg_system_msg {
+  width: 100%;
+  text-align: center;
+  color: #686C73;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.channel .msg_your_message {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.channel .msg_your_message img {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 10px;
+}
+
+.channel .msg_your_message .msg_your_texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.channel .msg_your_message .msg_your_texts .msg_your_author {
+  color: #B5B8BC;
+  font-size: 12px;
+}
+
+.channel .msg_your_message .msg_your_texts .msg_your_text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 13px;
+  max-width: 260px;
+  background-color: #36393F;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  margin-top: 3px;
+  word-break: break-all;
+}
+
+.channel .msg_your_message_image {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 58px;
+}
+
+.channel .msg_your_message_image img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 4px;
+}
+
+.channel .msg_my_message {
+  margin-right: 10px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.channel .msg_my_message .msg_my_texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.channel .msg_my_message .msg_my_texts .msg_my_author {
+  color: #B5B8BC;
+  font-size: 12px;
+  text-align: right;
+}
+
+.channel .msg_my_message .msg_my_texts .msg_my_text {
+  font-size: 13px;
+  text-align: left;
+  background-color: #36393F;
+  color: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  margin-top: 3px;
+}
+
+.channel .msg_my_message .msg_my_texts .msg_my_text a {
+  color: #ffffff;
+}
+
+.channel .msg_me_message_image {
+  margin-right: 10px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.channel .msg_me_message_image img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=chat.css.map */

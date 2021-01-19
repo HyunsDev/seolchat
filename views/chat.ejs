@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설챗 채팅방</title>
+    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="modal" onclick="$(this).removeClass(`modal_show`)">
+        <div class="modal_text">존재하지 않는 이메일이에요.</div>
+    </div>
+    <div class="divver">
+        <div class="window">
+            <div class="topbar">
+                <div class="top_left"><!--<a href="/setting">--><img src="/" id="profile" class="profile_img" alt="" onclick="move()"><!--</a>--></div>
+                <div class="top_mid">
+                    <div class="top_mid_big">설챗 채팅방</div> 
+                    <div class="top_mid_small"></div>
+                </div>
+                <div class="top_right">
+                    <div class="top_right_img">
+                        <img src="/" alt="" class="profile_img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="noticebar">
+                
+            </div>
+            <div class="chatbar">
+                <input type="text" placeholder="메시지 보내기" id="msg" onkeyup="enter()">
+
+                <div class="loud" onclick="notice_message()"><i class="fas fa-thumbtack"></i></div>
+                <div class="go" onclick="send_message()"><i class="fas fa-paper-plane"></i></div>
+            </div>
+            <div class="channel">
+                <div style="height: 30px;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+
+</body>
+</html>

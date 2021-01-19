@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222427;
+  color: #ffffff;
+}
+
+.divver {
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.window {
+  background-color: #292B2F;
+  height: 100%;
+  width: 400px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0;
+}
+
+.topbar {
+  background-color: #36393F;
+  height: 50px;
+  width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 10px;
+  top: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .arrow {
+  margin-right: 10px;
+  border-radius: 100%;
+  padding: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  width: 38px;
+  height: 38px;
+  margin-top: 4px;
+}
+
+.topbar .arrow:hover {
+  background-color: #44474d;
+}
+
+.topbar .topbar_text {
+  font-size: 14px;
+}
+
+.menu {
+  background-color: #292B2F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  padding-top: 80px;
+}
+
+.menu .section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.menu .section .section_title {
+  color: #616161;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.menu .section .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menu .section .imgs img {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+.menu .section .imgs .isSelect {
+  opacity: 1;
+}
+/*# sourceMappingURL=profile.css.map */

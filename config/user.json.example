@@ -1,0 +1,9 @@
+{
+    "이름": {
+        "nickname": "이름",
+        "password": "비밀번호",
+        "profile": "/base.png",
+        "key": "건드리지 마세요!",
+        "color": "#ffffff"
+    }
+}

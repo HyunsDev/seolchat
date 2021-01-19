@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설챗 채팅방</title>
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/setting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="modal" onclick="$(this).removeClass(`modal_show`)">
+        <div class="modal_text">존재하지 않는 이메일이에요.</div>
+    </div>
+    <div class="modal_good" onclick="$(this).removeClass(`modal_good_show`)">
+        <div class="modal_good_text">이름을 변경했어요</div>
+    </div>
+
+    <div class="divver">
+        <div class="window">
+
+            <div class="topbar">
+                <img src="/img/arrow-left-solid.svg" class="arrow" alt="" onclick="move()">
+                <div class="topbar_text">설정</div>
+            </div>
+
+
+
+            <div class="menu">
+
+                <div class="section">
+                    <div class="section_title">닉네임</div>
+                    <input class="section_input" type="text" placeholder="닉네임" onkeyup="enter()" id="name"></input>
+                </div>
+                <!-- <div class="btn" onclick="nickname()">닉네임 변경하기</div> -->
+
+
+
+                <div class="section">
+                    <div class="section_title">이름 색상</div>
+                    <input class="section_input" type="text" placeholder="#f1f1f1" onkeyup="color_enter()" id="color"></input>
+                </div>
+                <!-- <div class="btn" onclick="color()">이름 색상 변경하기</div> -->
+
+
+
+                <div class="section">
+                    <div class="section_title">사이트 이름</div>
+                    <input class="section_input" type="text" placeholder="컴뱃의 노예들" onkeyup="title_enter()" id="title"></input>
+                </div>
+                <!-- <div class="btn" onclick="title_change()">사이트 이름 변경하기</div> -->
+
+                <div class="section">
+                    <div class="section_title">프로필 사진</div>
+                    <div class="btn" onclick="move2()">프로필 사진 변경하기</div>
+                </div>
+
+                
+
+                <div class="section">
+                    <div class="section_title">사이트 정보</div>
+                    <p>설챗 버전 : 1.0.3</p>
+                    <p>Github : <a href="https://github.com/HyunsDev/seolchat">https://github.com/HyunsDev/seolchat</a></p>
+                </div>
+
+                <a href="/logout" style="color: unset; text-decoration: none;"><div class="btn" style="color: #e74c4c;">로그아웃</div></a>
+
+            </div>
+        </div>
+    </div>
+    <script src="/js/setting.js"></script>
+</body>
+</html>
