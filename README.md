@@ -1,5 +1,6 @@
 # 설챗(SeolChat)
 
+![소개 ](https://user-images.githubusercontent.com/46562466/105068443-4a34db80-5ac4-11eb-88bf-c2854e97d9f3.png)
 ![스크린샷](https://user-images.githubusercontent.com/46562466/105063958-af3a0280-5abf-11eb-99ba-0a9fa1c9b09f.png)
 
 설챗으로 우리만의 채팅방을 만들어보세요.
