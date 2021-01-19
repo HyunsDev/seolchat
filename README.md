@@ -1,6 +1,6 @@
 # 설챗(SeolChat)
 
-![소개 이미지](https://user-images.githubusercontent.com/46562466/105068705-97b14880-5ac4-11eb-8b9c-c10908dbf8df.png)
+![banner](https://user-images.githubusercontent.com/46562466/105068884-bb748e80-5ac4-11eb-8450-cf8227e1ffeb.png)
 
 
 ![스크린샷](https://user-images.githubusercontent.com/46562466/105063958-af3a0280-5abf-11eb-99ba-0a9fa1c9b09f.png)
